@@ -107,7 +107,7 @@ section {
 
 #section_03 {
     margin: 0 auto;
-    background-image: url('#');
+    background-image: url('./images/section_03_background.jpeg');
     height: 500px;
     width: auto;
     margin-top: 50px;
