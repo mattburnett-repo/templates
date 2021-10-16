@@ -1,17 +1,28 @@
+/* VARIABLES */
+:root {
+    --lightgray: lightgray;
+    --cornerRounding: 7px;
+    --opacityHi: 0.5;
+    --opacityMed: 0.65;
+    --opacityLo: 0.8;
+    --outerBorder: 3px double black;
+    --innerBorder: 3px double silver;
+}
+
+/* START */
 html {
     /* font-family: Arial, Helvetica, sans-serif;  */
-    font-family: "M PLUS 1p", Play;
+    font-family: Play, "M PLUS 1p";
     font-size: 18px;
     font-weight: 500;
     color: seashell;
-    background-color: lightgray;
+    background-color: var(--lightgray);
 
     margin: 0;
     padding: 0;
 }
 
 .main {
-    /* border: 3px solid pink; */
     width: 90%;
     margin: auto;
 }
@@ -19,7 +30,7 @@ html {
 /* NAV */
 nav {
     position: fixed;
-    background-color: lightgray;
+    background-color: var(--lightgray);
     height: 75px;
     width: 99%;
     z-index: 1;
@@ -51,8 +62,8 @@ section {
     justify-content: center;
     text-align: center;
     width: 100%;
-    border: 3px double silver;
-    border-radius: 25px;
+    border: var(--outerBorder);
+    border-radius: var(--cornerRounding);
     margin-bottom: 10px;
 }
 
@@ -67,8 +78,9 @@ section {
     margin: auto;
     background-color: black;
     width: 75%; 
-    border-radius: 25px;
-    opacity: 0.65;
+    border: var(--innerBorder);
+    border-radius: var(--cornerRounding);
+    opacity: var(--opacityMed);
 } 
 
 /* SECTION_02 */
@@ -102,8 +114,8 @@ section {
     margin: auto;
     width: 300px;
     height: 200px;
-    border: 3px double silver;
-    border-radius: 25px;
+    border: var(--innerBorder);
+    border-radius: var(--cornerRounding);
 }
 
 #section_02 .item h4 {
@@ -113,6 +125,14 @@ section {
     text-align: center;
 }
 
+#section_02 .infoPanel{
+    display: none;
+    background-color: lightcoral;
+    border: var(--innerBorder);
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+}
 /* SECTION_03 */
 
 #section_03 {
@@ -133,7 +153,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    opacity: 0.65;
+    opacity: var(--opacityMed);
 }
 
 #section_03 .items .item {
@@ -142,8 +162,8 @@ section {
     width: 300px;
     color: white;
     background-color: black;
-    border: 3px double silver;
-    border-radius: 25px;
+    border: var(--innerBorder);
+    border-radius: var(--cornerRounding);
 }
 
 /* FOOTER */
@@ -154,10 +174,10 @@ footer {
     height: 150px;
     padding: 20px;
     text-align: center; 
-    border: 3px double silver;
-    border-radius: 25px;
+    border: var(--outerBorder);
+    border-radius: var(--cornerRounding);
     margin-bottom: 10px;
-    opacity: 0.5;
+    opacity: var(--opacityHi);
 }
 
 footer h2, h5 {
@@ -170,7 +190,7 @@ footer h2, h5 {
     color: rgb(13, 110, 236);
     padding: 30px;
     text-align: left;
-    border: 3px double silver;
-    border-radius: 25px;
-    opacity: 0.5;
+    border: var(--outerBorder);
+    border-radius: var(--cornerRounding);
+    opacity: var(--opacityHi);
 }
