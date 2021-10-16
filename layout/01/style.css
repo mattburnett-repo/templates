@@ -1,7 +1,3 @@
-/* * {
-    border: 1px solid pink;
-} */
-
 /* @font-face {
     font-family: ;
     src: url();
@@ -11,18 +7,17 @@ html {
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 18px;
     color: seashell;
-    background-color: darkgray;
+    background-color: black;
 
     margin: 0;
     padding: 0;
 }
 
 /* NAV */
-
 nav {
     position: fixed;
     background-color: lightgray;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     height: 75px;
     width: 100%;
     z-index: 1;
@@ -45,107 +40,116 @@ nav a {
     text-decoration: none;
 }
 
-/* CONTAINER */
-    /* .container {
-        not sure about this one
-    } */
-
 /* SECTION */
 
+/* we want all sections to be flexboxes */
 section {
-    /* display: flex; */
-    text-align: center;
-    height: 500px;
-}
-
-#section_01 {
-    margin-top: 75px;
-    background-color: lightslategrey;
-    width: 100%;
-}
-
-#section_01 img {
-    height: 500px;
-    width: 100%;
-}
-
-.section_01_overlayText {
-    background-color: black;
-    width: 100%; 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-} 
-
-.section_02_header h4 {
-    margin-top: 10px;
-}
-
-#section_02 {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    position: relative;
-    margin: 0 auto;
-    /* top: 30px; */
-    /* width: 1000px; */
-    margin-top: 30px;
-}   
-
-.section_02_header {
     text-align: center;
     width: 100%;
 }
 
-.section_02_item img {
-    height: 200px;
-    width: 300px;
-    margin: 10px;  
+/* SECTION_01 */
+#section_01 {
+    margin-top: 75px;
+    height: 500px;
+    background-image: url('./images/section_03_background.jpeg');
 }
+
+#section_01 .overlayText {
+    margin: auto;
+    background-color: black;
+    width: 100%; 
+} 
+
+/* SECTION_02 */
+
+#section_02 {
+    /* inherit flex from section tag/class */
+    padding-bottom: 50px;
+    background-color: lightskyblue;
+}
+
+#section_02 .header {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#section_02 .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section_02 .item {
+    padding: 20px;
+}
+
+#section_02 .item img {
+    margin: auto;
+    width: 300px;
+    height: 200px;
+}
+
+.section_02_item h4 {
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* SECTION_03 */
 
 #section_03 {
-    margin: 0 auto;
+    /* inherit flexbox from section tag/class */
+    padding-bottom: 50px;
     background-image: url('./images/section_03_background.jpeg');
-    height: 500px;
-    width: auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    background-size: cover;
 }   
 
-.section_03_header {
+#section_03 .header {
     text-align: center;
     width: 100%;
 }
 
-.section_03_container {
+#section_03 .items {
     display: flex;
-    flex-flow: row;
-    position: relative;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    /* height: 200px; */
-    margin-top: 15px;
+    width: 100%;
 }
 
-.section_03_item {
-    height: 300px;
+#section_03 .items .item {
+    padding: 20px;
+    margin: 20px 20px;
     width: 300px;
+    color: white;
     background-color: black;
-    opacity: 1;
-    align-items: center;
-    margin: 0 20px;
 }
+
+/* FOOTER */
 
 footer {
     background-color: lightgray;
-    height: 200px;
-    text-align: center;
-    margin-bottom: 30px;
+    height: 150px;
+    padding: 20px;
+    text-align: center; 
+}
+
+footer h2, h5 {
+    top: 10px;
+    margin-top: 0px;
 }
 
 .copyright {
+    background-color: lightsteelblue;
+    padding: 30px;
     text-align: left;
-    margin-left: 20px;
 }
