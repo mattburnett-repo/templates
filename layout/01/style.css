@@ -93,7 +93,7 @@ section {
     height: 200px;
 }
 
-$section_02 .item h4 {
+#section_02 .item h4 {
     padding: 5px;
     min-width: 240px;
     font-weight: bold;
