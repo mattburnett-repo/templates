@@ -11,6 +11,8 @@ Project with multiple folders for different types of template / starter / founda
         3 element section
         footer
         copyright
+    * 02: resizing / media queries
+      * 
 
 * TODO:
   * 01
