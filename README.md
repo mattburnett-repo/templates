@@ -12,8 +12,11 @@ Project with multiple folders for different types of template / starter / founda
         footer
         copyright
     * 02: resizing / media queries
-      * 
-
+  
+        this is from the project example, and is here for easy access if needed sometime in the future
+  
+  ---
+  
 * TODO:
   * 01
     * section_0x background images don't center completely, leaving ca. 5px space on the right
