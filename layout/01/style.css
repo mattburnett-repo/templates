@@ -10,6 +10,8 @@
     --footer_BGcolor: rgb(186, 221, 245);
     --copyright_BGcolor: lightsteelblue;
 
+    /* these are for section 02 overlays only */
+    --overlay_TextColor: lightgray;
     --overlay_BGcolor: #008CBA;
 
     --cornerRounding: 7px;
@@ -110,14 +112,24 @@ section {
     background-color: var(--section01_BGcolor);
     /* background-image: url(''); */
 }
-#section_01 .overlayText {
+#section_01 .overlayTextOuter {
     margin: auto;
+    padding: auto;
+    background-color: green;
+    width: 50%;
+    /* height: 30%; */
+
+    opacity: var(--opacityLo);
+}
+#section_01 .overlayTextInner {
+    margin: auto;
+    /* margin-top: 0.55rem; */
     color: var(--secondary_TextColor);
     background-color: black;
     width: 75%; 
     border: var(--innerBorder);
     border-radius: var(--cornerRounding);
-    opacity: var(--opacityMed);
+    opacity: var(--opacityLo);
 } 
 
 /* SECTION_02 */
@@ -179,7 +191,7 @@ section {
 } 
 
 #section_02 .overlay .text {
-    color: white;
+    color: var(--overlay_TextColor);
     font-size: 20px;
     position: absolute;
     top: 50%;
