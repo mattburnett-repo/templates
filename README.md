@@ -14,11 +14,10 @@ Project with multiple folders for different types of template / starter / founda
     * 02: resizing / media queries\
          this is from the project example, and is here for easy access if needed sometime in the future
     * 03
-         TBD. Should focus on grid layout\
+         TBD. Should focus on grid layout
   
   ---
   
 * TODO:
-  * 01: section_02 infoPanel toggle on a:hover over img. Should display brief desc of item with link to actual thing.
   * 03: Should focus on grid layout
   
