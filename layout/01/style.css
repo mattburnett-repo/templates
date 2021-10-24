@@ -23,6 +23,10 @@
     --opacityLo: 0.8;
 }
 
+/* * {
+    border: 1px solid pink;
+} */
+
 /* START */
 html {
     font-family: Play, "M PLUS 1p"; /* imported in index.html head element */
@@ -81,6 +85,12 @@ nav a {
     text-decoration: none;
 }
 
+@media (max-width: 515px) {
+    nav a {
+        font-size: 0.8rem;
+    }
+}
+
 .main {
     width: 90%;
     margin: auto;
@@ -110,7 +120,9 @@ section {
     margin-top: 90px;
     height: 500px;
     background-color: var(--section01_BGcolor);
-    /* background-image: url(''); */
+    /* background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 #section_01 .overlayTextOuter {
     margin: auto;
@@ -131,6 +143,10 @@ section {
     border-radius: var(--cornerRounding);
     opacity: var(--opacityLo);
 } 
+
+#section_01 h2 {
+    font-size: 2rem;
+}
 
 /* SECTION_02 */
 
@@ -183,6 +199,7 @@ section {
 
     opacity: 0;
     transition: .5s ease;
+    color:var(--secondary_TextColor);
     background-color: var(--overlay_BGcolor);
 }
 
@@ -196,12 +213,34 @@ section {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 90%;
+    text-align: left;
 
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
+
+#section_02 .overlay ul {
+    margin: 0rem 0.6rem;
+    padding: 0px;
+}
+
+#section_02 .overlay .text a {
+    position: absolute;
+    border: var(--innerBorder);
+    padding: 0.3rem;
+    margin-top: 0.8rem;
+    margin-left: 4.1rem;
+
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+    color: var(--primary_TextColor);
+
+    background-color: var(--section02_BGcolor);
+}
 
 /* SECTION_03 */
 
@@ -236,6 +275,10 @@ section {
     border-radius: var(--cornerRounding);
 }
 
+.secondLine {
+    margin-bottom: 70px;
+}
+
 /* FOOTER */
 
 footer {
@@ -255,6 +298,12 @@ footer h2, h5 {
     top: 10px;
     margin-top: 0px;
     line-height: 1.5rem;
+}
+
+footer .links a {
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 40px;
 }
 
 .copyright {
