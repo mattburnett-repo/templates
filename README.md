@@ -4,7 +4,7 @@ Templates are stored in different branches. Look in the branches drop-down (uppe
 
 To clone a specific branch:
 ```
-git clone -b <branchname> <remote-repo-url>
+git clone -b <branchname> https://github.com/mattburnett-repo/templates.git
 ```
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv  
