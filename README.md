@@ -1,5 +1,3 @@
-# Templates
-
-HTML template
+# HTML template
 
 Basic scroll / highlight right-side nav elements
