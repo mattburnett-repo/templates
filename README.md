@@ -1,5 +1,3 @@
-# HTML navbar follows scrolling template
+## CSS Basic Animation Template
 
-
-Basic scroll / highlight right-side nav elements
-
+Sourced [here](https://github.com/gitdagray/css_course/tree/main/22_lesson)
