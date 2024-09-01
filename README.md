@@ -9,7 +9,10 @@ More about Haproxy [here](https://www.haproxy.org/)
 To install, 
 ```  
 mkdir project-folder-of-your-choice  
-cd project-folder-of-your-choice  
+cd project-folder-of-your-choice
+
+<<clone this repo with a '.' at the end>>
+
 cd app  
 npm i  
 ```
