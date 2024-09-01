@@ -24,3 +24,5 @@ After installing (cf. [commands.txt](./commands.txt)):
 docker build -t nodeapp .
 docker-compose up 
 ```
+
+App should load and be available on localhost:8080
