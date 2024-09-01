@@ -4,6 +4,8 @@
 
 A very basic haproxy-based microservice-ish example / template  
 
+More about Haproxy [here](https://www.haproxy.org/)
+
 To install, 
 ```  
 mkdir project-folder-of-your-choice  
